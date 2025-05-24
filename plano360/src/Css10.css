@@ -1,0 +1,413 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f9fc;
+  color: #222;
+}
+
+header {
+  background-color: #0b2545;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.header-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.header-buttons {
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  margin: 0.3rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn.login {
+  background-color: #5c3a21;
+  color: white;
+}
+
+.btn.signup {
+  background-color: #1f6f8b;
+  color: white;
+}
+
+.btn.cta {
+  background-color: #1f6f8b;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 1rem 1rem;
+}
+
+.hero-img {
+  max-width: 60%;
+  height: auto;
+  border-radius: 7px;
+  margin-bottom: 1rem;
+}
+
+.full-width-img {
+  
+max-width: 60%;
+  height: auto;
+ border-radius: 7px;
+  margin-bottom: 1rem;
+}
+
+section {
+  padding: 1rem 1rem;
+  text-align: center;
+}
+
+.about, .features, .dashboard, .testimonials {
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.line {
+  width: 85px;
+  height: 4.2px;
+  background-color: #5c3a21;
+  margin: 0.6rem auto 1.1rem;
+  border-radius: 2px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.card {
+  width: 250px;
+  background: #f0f4f8;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.circle-img {
+  width: 85px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.8rem;
+}
+
+.dashboard-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.7rem;
+  justify-content: center;
+  text-align: left;
+  padding: 1rem;
+}
+
+.dashboard-box div {
+  background: #eaf2f8;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 222px;
+}
+
+.testimonials {
+  background: #eef1f6;
+}
+
+.testimonial {
+  margin-bottom: 2rem;
+}
+
+.user-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.stars {
+  font-size: 1.2rem;
+  color: #f4a261;
+}
+
+footer {
+  background-color: #051830;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+/* Estilo Login*/
+.login-container {
+            max-width: 400px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .form-group label {
+            font-weight: 600;
+        }
+        
+        .form-group input {
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        
+        .login-btn {
+            background-color: #1f6f8b;
+            color: white;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .login-links {
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+        
+        .login-links a {
+            color: #1f6f8b;
+            text-decoration: none;
+        }
+        /* Estilo Adicionar Tarefas*/
+        .task-container {
+          max-width: 600px;
+          margin: 2rem auto;
+          padding: 2rem;
+          background: white;
+          border-radius: 10px;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      }
+      
+      .task-form {
+          display: flex;
+          flex-direction: column;
+          gap: 1.2rem;
+      }
+      
+      .form-group {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+      }
+      
+      .form-group label {
+          font-weight: 600;
+      }
+      
+      .form-group input, 
+      .form-group textarea,
+      .form-group select {
+          padding: 0.8rem;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          font-family: 'Segoe UI', sans-serif;
+      }
+      
+      .form-group textarea {
+          min-height: 100px;
+          resize: vertical;
+      }
+      
+      .priority-levels {
+          display: flex;
+          gap: 1rem;
+      }
+      
+      .priority-option {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+      }
+      
+      .submit-btn {
+          background-color: #1f6f8b;
+          color: white;
+          padding: 0.8rem;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 1rem;
+          margin-top: 1rem;
+        }
+        /* Visualizar Tarefas*/
+        .tasks-container {
+          max-width: 1000px;
+          margin: 2rem auto;
+          padding: 1rem;
+      }
+      
+      .tasks-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 1.5rem;
+      }
+      
+      .add-task-btn {
+          background-color: #1f6f8b;
+          color: white;
+          padding: 0.6rem 1.2rem;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          text-decoration: none;
+          font-size: 0.9rem;
+      }
+      
+      .tasks-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+          gap: 1.5rem;
+      }
+      
+      .task-card {
+          background: white;
+          border-radius: 8px;
+          padding: 1.2rem;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+          border-left: 4px solid #1f6f8b;
+      }
+      
+      .task-card.high {
+          border-left-color: #e63946;
+      }
+      
+      .task-card.medium {
+          border-left-color: #f4a261;
+      }
+      
+      .task-card.low {
+          border-left-color: #2a9d8f;
+      }
+      
+      .task-title {
+          font-size: 1.2rem;
+          font-weight: 600;
+          margin-bottom: 0.5rem;
+      }
+      
+      .task-meta {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 0.5rem;
+          font-size: 0.9rem;
+          color: #555;
+      }
+      
+      .task-description {
+          margin: 0.8rem 0;
+          color: #444;
+          line-height: 1.4;
+      }
+      
+      .task-status {
+          display: inline-block;
+          padding: 0.3rem 0.6rem;
+          border-radius: 12px;
+          font-size: 0.8rem;
+          font-weight: 500;
+      }
+      
+      .status-pending {
+          background-color: #ffddd2;
+          color: #d62828;
+      }
+      
+      .status-in-progress {
+          background-color: #f8edeb;
+          color: #f4a261;
+      }
+      
+      .status-completed {
+          background-color: #e2f3e4;
+          color: #2a9d8f;
+      }
+      
+      .task-actions {
+          display: flex;
+          gap: 0.8rem;
+          margin-top: 1rem;
+      }
+      
+      .task-btn {
+          padding: 0.4rem 0.8rem;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          font-size: 0.8rem;
+      }
+      
+      .edit-btn {
+          background-color: #f8edeb;
+          color: #1f6f8b;
+      }
+      
+      .delete-btn {
+          background-color: #ffddd2;
+          color: #d62828;
+      }
+      
+      .filter-section {
+          margin-bottom: 1.5rem;
+          display: flex;
+          gap: 1rem;
+          flex-wrap: wrap;
+      }
+      
+      .filter-btn {
+          padding: 0.5rem 1rem;
+          border: 1px solid #ddd;
+          border-radius: 20px;
+          background: white;
+          cursor: pointer;
+      }
+      
+      .filter-btn.active {
+          background-color: #1f6f8b;
+          color: white;
+          border-color: #1f6f8b;
+      }
+      .no-underline {
+        text-decoration: none;
+        color: white;
+      }
+      
