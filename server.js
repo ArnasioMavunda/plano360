@@ -11,7 +11,7 @@ const db = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "", // Coloca sua senha se tiver
-  database: "Plano360";
+  database: "Plano360"
 });
 
 // Testar conexão
