@@ -3,22 +3,53 @@ import { useNavigate } from 'react-router-dom';
 
 // Página de Login
 export const Login = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const navigate = useNavigate();
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('http://localhost:3001/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password })
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        alert("Login bem-sucedido!");
+        navigate('/'); // vai para a página inicial
+      } else {
+        alert("Email ou senha inválidos!");
+      }
+      
+
+    } catch (error) {
+      console.error("Erro ao tentar fazer login:", error);
+      alert("Erro na conexão com o servidor.");
+    }
+  };
+
   return (
     <main>
       <div className="login-container">
         <h2>Entrar na Conta</h2>
         <div className="line"></div>
-        <form className="login-form">
+        <form className="login-form" onSubmit={handleLogin}>
           <div className="form-group">
             <label htmlFor="email">Email</label>
-            <input type="email" id="email" required />
+            <input type="email" id="email" required value={email} onChange={(e) => setEmail(e.target.value)} />
           </div>
           <div className="form-group">
             <label htmlFor="password">Senha</label>
-            <input type="password" id="password" required />
+            <input type="password" id="password" required value={password} onChange={(e) => setPassword(e.target.value)} />
           </div>
           <button type="submit" className="login-btn">Entrar</button>
         </form>
+
         <div className="login-links">
           <p><a href="#">Esqueceu a senha?</a></p>
           <p>Não tem conta? <a href="#">Crie uma agora</a></p>
